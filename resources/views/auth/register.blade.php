@@ -6,7 +6,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Registrate acá, para poder contratar servicios') }}</div>
-
                 <div>
                     <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                         @csrf
@@ -55,10 +54,10 @@
 						
 						<div class="form-group row">
                             <label for="genero" class="col-md-4 col-form-label text-md-right">{{ __('Género') }}</label>
-
+							
                             <div class="col-md-6">
-                                <input id="genero" type="text" class="form-control @error('genero') is-invalid @enderror" name="genero" value="{{ old('genero') }}" required autocomplete="genero" autofocus>
-
+							<select name="genero" class="form-control @error('genero') is-invalid @enderror"><option>Femenino</option><option>Masculino</option><option>Travesti</option><option>Otro</option></select>
+                                
                                 @error('genero')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -94,21 +93,21 @@
                                 @enderror
                             </div>
                         </div>
-						
 						<div class="form-group row">
-                            <label for="barrio" class="col-md-4 col-form-label text-md-right">{{ __('Barrio') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="barrio" type="text" class="form-control @error('barrio') is-invalid @enderror" name="barrio" value="{{ old('barrio') }}" required autocomplete="barrio" autofocus>
-
-                                @error('barrio')
+						<label for="country" class="col-md-4 col-form-label text-md-right">{{ __('País') }}</label>
+						<div class="col-md-6">
+                                <!--<input id="barrio" type="text" class="form-control @error('barrio') is-invalid @enderror" name="barrio" value="{{ old('barrio') }}" required autocomplete="barrio" autofocus>-->
+								<!--<select name="country" class="form-control @error('country') is-invalid @enderror">
+									<option value="">Elegí un país</option>
+								</select>-->
+								<select name="country" class="form-control @error('barrio') is-invalid @enderror"><option>Elegí país</option></select>
+                                @error('country')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                         </div>
-						
 						<div class="form-group row">
                             <label for="birthdate" class="col-md-4 col-form-label text-md-right">{{ __('Fecha de Nacimiento') }}</label>
 
@@ -165,7 +164,6 @@
 								<input class="form-control" type="file" name="archivo"><br>
 							</div>
 						</div>
-
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
@@ -179,4 +177,8 @@
         </div>
     </div>
 </div>
+<!--<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>-->
+<script src="js/getCountries.js"></script>
+<!--<script src="js/registerValidate.js"></script>-->
 @endsection
