@@ -22,7 +22,7 @@ class usuariosController extends Controller
 			
 			if($base[$clave]['userkind'] == 'prestador')
 			{
-			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 $profesionales[$cnt++] = array("id" => $base[$clave]['id'], "name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
 			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
 			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
 			}			
@@ -31,7 +31,7 @@ class usuariosController extends Controller
 	}
 	
 	public function dibujar_carpinteros(){
-		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		//require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
 		$base = usuariosModel::all();
 		$cnt = 0;
 		$profesionales = [];
@@ -39,7 +39,7 @@ class usuariosController extends Controller
 			
 			if($base[$clave]['profesion'] == 'carpintero')
 			{
-			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 $profesionales[$cnt++] = array("id" => $base[$clave]['id'], "name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
 			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
 			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
 			}			
@@ -48,7 +48,7 @@ class usuariosController extends Controller
 	}
 	
 	public function dibujar_gasistas(){
-		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		//require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
 		$base = usuariosModel::all();
 		$cnt = 0;
 		$profesionales = [];
@@ -56,7 +56,7 @@ class usuariosController extends Controller
 			
 			if($base[$clave]['profesion'] == 'gasista')
 			{
-			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 $profesionales[$cnt++] = array("id" => $base[$clave]['id'], "name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
 			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
 			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
 			}			
@@ -65,7 +65,7 @@ class usuariosController extends Controller
 	}
 	
 	public function dibujar_plomeros(){
-		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		//require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
 		$base = usuariosModel::all();
 		$cnt = 0;
 		$profesionales = [];
@@ -73,7 +73,7 @@ class usuariosController extends Controller
 			
 			if($base[$clave]['profesion'] == 'plomero')
 			{
-			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 $profesionales[$cnt++] = array("id" => $base[$clave]['id'], "name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
 			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
 			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
 			}			
@@ -82,7 +82,7 @@ class usuariosController extends Controller
 	}
 	
 	public function dibujar_electricistas(){
-		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		//require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
 		$base = usuariosModel::all();
 		$cnt = 0;
 		$profesionales = [];
@@ -90,7 +90,7 @@ class usuariosController extends Controller
 			
 			if($base[$clave]['profesion'] == 'electricista')
 			{
-			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 $profesionales[$cnt++] = array("id" => $base[$clave]['id'], "name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
 			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
 			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
 			}			
@@ -99,7 +99,7 @@ class usuariosController extends Controller
 	}
 	
 	public function dibujar_mmos(){
-		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		//require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
 		$base = usuariosModel::all();
 		$cnt = 0;
 		$profesionales = [];
@@ -107,7 +107,7 @@ class usuariosController extends Controller
 			
 			if($base[$clave]['profesion'] == 'mmo')
 			{
-			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 $profesionales[$cnt++] = array("id" => $base[$clave]['id'], "name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
 			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
 			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
 			}			
@@ -116,7 +116,7 @@ class usuariosController extends Controller
 	}
 	
 	public function dibujar_arquitectos(){
-		require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
+		//require_once 'profesionesList.php'; //Hay un $serviceList = sarasa;
 		$base = usuariosModel::all();
 		$cnt = 0;
 		$profesionales = [];
@@ -124,7 +124,7 @@ class usuariosController extends Controller
 			
 			if($base[$clave]['profesion'] == 'arquitecto')
 			{
-			 $profesionales[$cnt++] = array("name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
+			 $profesionales[$cnt++] = array("id" => $base[$clave]['id'], "name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
 			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
 			 "userkind" => $base[$clave]['userkind'], "profesion" => $base[$clave]['profesion'], "barrio" => $base[$clave]['barrio']);
 			}			
@@ -138,8 +138,9 @@ class usuariosController extends Controller
 		$id_usuario = $request->session()->get('login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d'); //Devuelve un int con el id de usuario de la base de datos
 		$id_usuario--; //Pues posición en array arranca de cero y contabilización en base de datos en uno.
 		$base = usuariosModel::all();
-		$datos_usuario = array("name" => $base[$id_usuario]['name'], "surname" => $base[$id_usuario]['surname'], "dni" => $base[$id_usuario]['dni'], "birthdate" => $base[$id_usuario]['birthdate'], "email" => $base[$id_usuario]['email'], "ext" => $base[$id_usuario]['ext'], "userkind" => $base[$id_usuario]['userkind'], "profesion" => $base[$id_usuario]['profesion'], "barrio" => $base[$id_usuario]['barrio']);
+		$datos_usuario = array("id" => $base[$id_usuario]['id'], "name" => $base[$id_usuario]['name'], "surname" => $base[$id_usuario]['surname'], "dni" => $base[$id_usuario]['dni'], "birthdate" => $base[$id_usuario]['birthdate'], "email" => $base[$id_usuario]['email'], "ext" => $base[$id_usuario]['ext'], "userkind" => $base[$id_usuario]['userkind'], "profesion" => $base[$id_usuario]['profesion'], "barrio" => $base[$id_usuario]['barrio']);
 		session_start();
+		$_SESSION['id'] = $datos_usuario['id'];
 		$_SESSION['name'] = $datos_usuario['name'];
 		$_SESSION['surname'] = $datos_usuario['surname'];
 		$_SESSION['dni'] = $datos_usuario['dni'];
@@ -153,10 +154,9 @@ class usuariosController extends Controller
 		//Toma los datos de la base de datos y los pone en el array $datos_usuario para que los lea la vista home.blade.php. Además, los mete en variables de sesión.
 	}
 	
-	/*public function varsesion(Request $request)
-	{
-		$var_sesion = $request->input();
-		return view('sesion', compact('var_sesion'));
+	public function contratar_profesionales(){
+		//Le manda la base entera a la vista, y esta selecciona un prestador en función de la variable $_SESSION['contratar_a'];
+		$base = usuariosModel::all();
+		return view('contratar', compact('base'));
 	}
-	*/
 }

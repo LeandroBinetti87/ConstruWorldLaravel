@@ -96,4 +96,6 @@ Route::get("/leervariables", "HomeController@show");
 
 Route::get('/action_page', "HomeController@cw_form");
 
+Route::get("/contratar", "usuariosController@contratar_profesionales");
+
 //Fin rutas ConstruWorld

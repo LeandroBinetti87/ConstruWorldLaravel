@@ -16,10 +16,21 @@
     <div class="card-body" style="margin-bottom: 20px;">
     	<p class= "" style="font-size: 20px;"><?= $profesionales[$counter]['name'] . " " . $profesionales[$counter]['surname'] ?></p>
 		<img src="<?php echo "/usuarios/" . $profesionales[$counter]['name'] . $profesionales[$counter]['surname'] . "." .$profesionales[$counter]['ext']; ?>" height="60px" style="border-radius: 50%;" alt= "Imagen" >
-		<p class="card-text"><?= substr($profesionales[$counter]['barrio'], 0, 150) ?>...</p>
-		<a href="">Contratar</a>
+		<p class="card-text"><?= substr($profesionales[$counter]['barrio'], 0, 150) ?></p>
+		<p class="card-text"><?= substr($profesionales[$counter]['id'], 0, 150) ?></p>
+		<a href="<?php guardarID($profesionales[$counter]['id']) ?>">Contratar <?php echo $profesionales[$counter]['id']; ?></a>
 	</div>
   <?php $counter++; endforeach; ?>
   </div>
 </div>
+
+<?php
+     function  guardarID($id_contract)
+    {
+		//Todo esto se hace porque aparentemente hay un 'bug' de Laravel o lo que sea que hace que si mando el id en la ruta (/contratar/{id}) se chonguea la css y no muestra
+		//bien el header
+		  $_SESSION['contratar_a'] = $id_contract;
+          echo "contratar";
+    }
+?>
 @endsection
