@@ -8,10 +8,9 @@
 	} else echo "No iniciaste sesión";
 	?>
   
-   <div class="servicios-list" style="margin-top: 20px;">
-  <!-- Los servicios -->
+ <div class="servicios-list" style="margin-top: 20px;">
+  
   <?php 
-  echo $_SESSION['contratar_a'];
   echo "<h1>" . $_SESSION['name'] . " " . $_SESSION['surname'] . "</h1>";
   ?>
   
@@ -20,7 +19,7 @@
   <?php
   foreach($base as $clave=>$valor){
 			
-			if($base[$clave]['id'] == $_SESSION['contratar_a'])
+			if($base[$clave]['id'] == $file_id)
 			{
 			 $profesional = array("id" => $base[$clave]['id'], "name" => $base[$clave]['name'], "surname" => $base[$clave]['surname'], "dni" => $base[$clave]['dni'],
 			 "birthdate" => $base[$clave]['birthdate'], "email" => $base[$clave]['email'], "ext" => $base[$clave]['ext'],
@@ -33,6 +32,6 @@
   //mail($to_email_address,$subject,$message,[$headers],[$parameters]);
   ?>
   <img src="<?php echo "/usuarios/" . $profesional['name'] . $profesional['surname'] . "." .$profesional['ext']; ?>" height="60px" style="border-radius: 50%;" alt= "Imagen" >
-  </div>
+ </div>
 </div>
 @endsection

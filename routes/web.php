@@ -62,6 +62,7 @@ Route::get('/loginpres', function () {
 });
 
 
+
 //Fin rutas registro y login como prestador
 
 Auth::routes();
@@ -97,5 +98,7 @@ Route::get("/leervariables", "HomeController@show");
 Route::get('/action_page', "HomeController@cw_form");
 
 Route::get("/contratar", "usuariosController@contratar_profesionales");
+
+Route::get("/setearcontratar/{id}", "usuariosController@setearcontratar");
 
 //Fin rutas ConstruWorld

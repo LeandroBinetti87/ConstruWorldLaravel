@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\usuariosModel;
+use Illuminate\Support\Facades\Input;
 
 class usuariosController extends Controller
 {
@@ -156,6 +157,16 @@ class usuariosController extends Controller
 	
 	public function contratar_profesionales(){
 		//Le manda la base entera a la vista, y esta selecciona un prestador en función de la variable $_SESSION['contratar_a'];
+		$base = usuariosModel::all();
+		
+		//Obtenemos id de prestador contratado a través de query string
+		$file_id = Input::get('id_contract'); //use Illuminate\Support\Facades\Input;
+		return view('contratar', compact('base', 'file_id'));
+	}
+	
+	public function setearcontratar($id){
+		$_SESSION['contratar_a_'] = $id;
+		echo "Seteaste el usuario " . $_SESSION['contratar_a_'];
 		$base = usuariosModel::all();
 		return view('contratar', compact('base'));
 	}
