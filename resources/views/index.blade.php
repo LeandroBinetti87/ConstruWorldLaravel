@@ -19,7 +19,7 @@
   <div class="mySlidesb fadeb">
     <div class="numbertextb">3 / 3</div>
     <img src="/images/img3.jpg" style="width:100%">
-    <div class="textb">Avalado por la sociedad argentina de adoradores de Bill Gates</div>
+    <div class="textb">La forma más fácil de realizar tus proyectos</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -48,7 +48,7 @@
     <article class="description-box">
     	<h3>Equipo</h3>
       <i class="fas fa-users"></i>
-    	<p>Somos un grupo de profesionales de las ciencias informáticas con aspiraciones de dominar el mundo comenzando por el rubro inmuebles.</p>
+    	<p>Somos un grupo de profesionales que creemos en que el mundo puede ser más práctico para todos.</p>
     	<a href="#">Ver mas</a>
     </article>
     <article class="description-box">
@@ -60,7 +60,7 @@
     <article class="description-box">
     	<h3>Algo más</h3>
       <i class="fas fa-drafting-compass"></i>
-    	<p>Podés comprar y vender materiales, obtener asesoramiento legal y donarnos inmuebles o porcentajes de los mismos, así no laburamos más.</p>
+    	<p>Podés comprar y vender materiales, obtener asesoramiento legal y mucho más.</p>
     	<a href="#">Ver más</a>
     </article>
   </section>
