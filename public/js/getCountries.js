@@ -10,7 +10,7 @@
 			for (var pais of data) {
 				selectPaises.innerHTML = selectPaises.innerHTML + '<option value=' + pais.alpha2Code + '>' + pais.name + '</option>';
 			}
-			console.log(selectPaises.innerHTML);
+			//console.log(selectPaises.innerHTML);
 		})
 		.catch(function (error) {
 			console.log(error);
