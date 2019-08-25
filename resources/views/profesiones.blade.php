@@ -20,7 +20,7 @@
 		<p class="card-text"><?= substr($profesionales[$counter]['id'], 0, 150) ?></p>
 		<form action="/contratar" method="get">
 			<input type="hidden" name="id_contract" value="<?=$profesionales[$counter]['id']?>">
-			<input type="submit" value="CONTRATAR">
+			<input type="<?php if(isset($_SESSION['name'])){echo 'submit';} else {echo 'hidden';}?>" value="CONTRATAR">
 		</form>
 	</div>
   <?php $counter++; endforeach; ?>
