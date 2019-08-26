@@ -1,5 +1,5 @@
 // Capturo el formulario
-var elFormu = document.querySelector('form');
+var elFormu = document.querySelector('.form-control');
 
 // Capturo los campos del formulario y convirtiendo a un array
 var losCampos = Array.from(elFormu.elements);
@@ -21,10 +21,8 @@ var errores = {};
 
 losCampos.forEach(function (unCampo) {
 	console.log("ForEach " + unCampo.name + " " + unCampo.type);
-	
-	unCampo.addEventListener('change', function () {	
+
+	unCampo.addEventListener('change', function () {
 		console.log("Evento blur detectado");
 	});
 });
-
-
