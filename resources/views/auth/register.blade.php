@@ -13,83 +13,56 @@
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
                             <div class="col-md-6">
-<<<<<<< HEAD
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-								<div class="is-invalid">
-									<!-- Error -->
-=======
+                                
                                 <input type="text" class="form-control" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 								<div class="invalid">
 									<!-- Mensaje de error -->
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
 								</div>
                             </div>
                         </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
 						<div class="form-group row">
                             <label for="surname" class="col-md-4 col-form-label text-md-right">{{ __('Apellido') }}</label>
                             <div class="col-md-6">
-<<<<<<< HEAD
                                 <input id="surname" type="text" class="form-control" name="surname" value="{{ old('surname') }}" required autocomplete="surname" autofocus>
 								<div class="is-invalid">
 									<!-- Error -->
 								</div>
 							</div>
-=======
-                                <input type="text" class="form-control" name="surname" value="{{ old('surname') }}" required autocomplete="surname" autofocus>
-
                                 @error('surname')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
                         </div>
 
 						<div class="form-group row">
                             <label for="dni" class="col-md-4 col-form-label text-md-right">{{ __('Documento') }}</label>
 
                             <div class="col-md-6">
-<<<<<<< HEAD
                                 <input id="dni" type="text" class="form-control" name="dni" value="{{ old('dni') }}" required autocomplete="dni" autofocus>
 								<div class="is-invalid">
 									<!-- Error -->
 								</div>
-=======
-                                <input type="text" class="form-control" name="dni" value="{{ old('dni') }}" required autocomplete="dni" autofocus>
-
                                 @error('dni')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
                             </div>
                         </div>
 
 						<div class="form-group row">
                             <label for="genero" class="col-md-4 col-form-label text-md-right">{{ __('Género') }}</label>
-<<<<<<< HEAD
                             <div class="col-md-6">
 							<select name="genero" class="form-control"><option>Femenino</option><option>Masculino</option><option>Travesti</option><option>Otro</option></select>
                                 <div class="is-invalid">
 									<!-- Error -->
 								</div>
-=======
-
-                            <div class="col-md-6">
-							<select name="genero" class="form-control"><option>Femenino</option><option>Masculino</option><option>Femenino</option><option>Otro</option></select>
-
                                 @error('genero')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
                             </div>
                         </div>
 
@@ -97,12 +70,10 @@
                             <label for="userkind" class="col-md-4 col-form-label text-md-right">{{ __('Tipo de usuario') }}</label>
 
                             <div class="col-md-6">
-<<<<<<< HEAD
                                 <input id="userkind" type="text" class="form-control" name="userkind" value="usuario" required autocomplete="userkind" autofocus>
 								<div class="is-invalid">
 									<!-- Error -->
 								</div>
-=======
                                 <input type="text" class="form-control" name="userkind" value="usuario" required autocomplete="userkind" autofocus>
 
                                 @error('userkind')
@@ -110,7 +81,6 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
                             </div>
                         </div>
 
@@ -118,37 +88,22 @@
                             <label for="profesion" class="col-md-4 col-form-label text-md-right">{{ __('Profesión') }}</label>
 
                             <div class="col-md-6">
-<<<<<<< HEAD
-                                <input id="profesion" type="text" class="form-control" name="profesion" value="-" required autocomplete="profesion" autofocus>
-								<div class="is-invalid">
-=======
                                 <input type="text" class="form-control" name="profesion" value="-" required autocomplete="profesion" autofocus>
 								<div class="invalid">
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
 									<!-- Mensaje de error -->
 								</div>
                             </div>
                         </div>
+						
 						<div class="form-group row">
 						<label for="country" class="col-md-4 col-form-label text-md-right">{{ __('País') }}</label>
 						<div class="col-md-6">
-<<<<<<< HEAD
-								<select name="country" class="form-control"><option>Elegí país</option></select>
-								<div class="is-invalid">
-									<!-- Error -->
-								</div>
-=======
-                                <!--<input id="barrio" type="text" class="form-control @error('barrio') is-invalid @enderror" name="barrio" value="{{ old('barrio') }}" required autocomplete="barrio" autofocus>-->
-								<!--<select name="country" class="form-control @error('country') is-invalid @enderror">
-									<option value="">Elegí un país</option>
-								</select>-->
 								<select name="country" class="form-control"><option>Elegí país</option></select>
                                 @error('country')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
+							    @enderror
                             </div>
                         </div>
 
@@ -161,67 +116,54 @@
                                                     <strong>{{ $message }}</strong>
                                                 </span>
                                             @enderror
-                                        </div>
-                                    </div>
+                         </div>
+                        </div>
 
 
 
 						<div class="form-group row">
                             <label for="birthdate" class="col-md-4 col-form-label text-md-right">{{ __('Fecha de Nacimiento') }}</label>
                             <div class="col-md-6">
-<<<<<<< HEAD
                                 <input id="birthdate" type="text" class="form-control" name="birthdate" value="{{ old('birthdate') }}" required autocomplete="birthdate" autofocus>
 								<div class="is-invalid">
 									<!-- Error -->
 								</div>
-=======
-                                <input type="text" class="form-control" name="birthdate" value="{{ old('birthdate') }}" required autocomplete="birthdate" autofocus>
-
                                 @error('birthdate')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
                             </div>
                         </div>
+						
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Dirección de E-mail') }}</label>
                             <div class="col-md-6">
-<<<<<<< HEAD
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autocomplete="email">
 								<div class="invalid">
 									<!-- Error -->
 								</div>
-=======
-                                <input type="email" class="form-control" name="email" value="{{ old('email') }}" required autocomplete="email">
-
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
                             </div>
                         </div>
+						
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
 
                             <div class="col-md-6">
-<<<<<<< HEAD
                                 <input id="password" type="password" class="form-control" name="password" required autocomplete="new-password">
 								<div class="invalid">
 									<!-- Error -->
 								</div>
-=======
-                                <input type="password" class="form-control" name="password" required autocomplete="new-password">
-
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
                             </div>
                         </div>
 
@@ -254,14 +196,11 @@
 </div>
 <!--<script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>-->
-<<<<<<< HEAD
 <script src="/js/getCountries.js"></script>
 <script src="/js/registerValidate.js"></script>
-@endsection
-=======
-<script src="js/getCountries.js"></script>
+<script src="js/getState.js"></script>
 <!--<script src="js/getState.js"></script>
 <script src="js/registerValidate.js">
 <script src="js/servicecss.js"></script></script>-->
 @endsection
->>>>>>> 655b4536a2c0a4dd848b6a3e3bf6915f29950db0
+

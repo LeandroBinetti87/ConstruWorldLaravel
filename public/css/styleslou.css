@@ -304,7 +304,6 @@ input{
 .card-body{
 	width: calc(100% / 3);
 	padding: 20px;
-	text-align:center; /*No está esta línea en versión Lourdes*/
 }
 
 .card-text{

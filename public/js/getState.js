@@ -8,7 +8,8 @@
 		.then(function (data) {
 			var selectState = document.querySelector('[name=state]');
 			for (var state of data) {
-				selectState.innerHTML += '<option>' + provincia.state + '</option>';
+				//selectState.innerHTML += '<option>' + state.state + '</option>';
+				//console.log("Prov: " + state.state);
 			}
 			//console.log(selectPaises.innerHTML);
 		})
