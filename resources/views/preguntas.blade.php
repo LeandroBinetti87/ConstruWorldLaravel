@@ -18,7 +18,7 @@
 								</div>
 
 						<div id="collapseUno" class="collapse" aria-labelledby="headingUno" data-parent="#accordionPreguntas">
-							<div class="card-body">
+							<div class="col-md-12 card-body">
 								Mediante una entrevista en profundidad se evalúa su capacidad técnica y operativa, honestidad y cordialidad. También se investigan referencias e historial laboral.
 						    Asimismo con las calificaciones que otorgan los usuarios del servicio, se cuenta con una una evaluación permanente y dinámica de cada prestador acerca de su idoneidad, buen trato y precios justos.
 							</div>
@@ -35,7 +35,7 @@
 					</div>
 
 					<div id="collapseDos" class="collapse" aria-labelledby="headingDos" data-parent="#accordionPreguntas">
-						<div class="card-body">
+						<div class="col-md-12 card-body">
 					    <ol>
 					      <li>Reune prestadores calificados, seleccionados de manera idónea;</li>
 					      <li>Que se encuentran disponibles mediante un click, o a traves de nuestra central telefónica;</li>
@@ -58,7 +58,7 @@
 					</div>
 
 					<div id="collapseTres" class="collapse" aria-labelledby="headingTres" data-parent="#accordionPreguntas">
-						<div class="card-body">
+						<div class="col-md-12 card-body">
 	    			Cualquier persona mayor de 18 años, residente en CABA y área metropolitana (previa aceptación de los Términos de Uso de Servicios).
 					</div>
 				</div>
@@ -74,7 +74,7 @@
 					</div>
 
 				<div id="collapseCuatro" class="collapse" aria-labelledby="headingCuatro" data-parent="#accordionPreguntas">
-					<div class="card-body">
+					<div class="col-md-12 card-body">
 				    Los prestadores de Construworld son PyMEs o trabajadores independientes habilitados, por los que ellos se encuentran obligados a emitir facturas por los trabajos realizados.
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 			</div>
 
 				<div id="collapseCinco" class="collapse" aria-labelledby="headingCinco" data-parent="#accordionPreguntas">
-					<div class="card-body">
+					<div class="col-md-12 card-body">
 					Si el trabajo difiere al presupuestado y acordado por ambas partes, quedó incompleto, no llegó a realizarse u otros, nuestro Departamento Legales se encuentra a disposición para brindar asesoramiento a nuestros usuarios.
 					</div>
 				</div>
@@ -106,8 +106,8 @@
 				</div>
 
 				<div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#accordionPreguntas">
-					<div class="card-body">
-					Si vos o tu empresa quieren formar parte de Construworld, contactanos  <a href="contacto.php">aquí</a> y comenzaremos con el proceso de admisión.
+					<div class="col-md-12 card-body">
+					Si vos o tu empresa quieren formar parte de Construworld, contactanos  <a href="contacto">aquí</a> y comenzaremos con el proceso de admisión.
 					</div>
 				</div>
 			</div>
