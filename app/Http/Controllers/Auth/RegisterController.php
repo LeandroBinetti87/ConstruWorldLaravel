@@ -98,7 +98,7 @@ class RegisterController extends Controller
 			'ext' => $ext,
 			'userkind' => $data['userkind'],
 			'profesion' => $data['profesion'],
-			'barrio' => $data['barrio'],
+			'barrio' => $data['country'],
         ]);
     }
 }

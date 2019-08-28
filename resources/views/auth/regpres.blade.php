@@ -96,10 +96,10 @@
                         </div>
 						
 						<div class="form-group row">
-                            <label for="barrio" class="col-md-4 col-form-label text-md-right">{{ __('Barrio') }}</label>
+                            <label for="country" class="col-md-4 col-form-label text-md-right">{{ __('Barrio') }}</label>
 
                             <div class="col-md-6">
-                                <input id="barrio" type="text" class="form-control @error('barrio') is-invalid @enderror" name="barrio" value="{{ old('barrio') }}" required autocomplete="barrio" autofocus>
+                                <input id="country" type="text" class="form-control @error('barrio') is-invalid @enderror" name="country" value="{{ old('barrio') }}" required autocomplete="barrio" autofocus>
 
                                 @error('barrio')
                                     <span class="invalid-feedback" role="alert">

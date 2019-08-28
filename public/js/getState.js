@@ -10,7 +10,7 @@
 			var selectState = document.querySelector('[name=state]');
 			for (var state of data.data) {
 				console.log(state.state)
-				//selectState.innerHTML += '<option>' + state.state + '</option>';
+				selectState.innerHTML += '<option>' + state.state + '</option>';
 				//console.log("Prov: " + state.state);
 			}
 			//console.log(selectPaises.innerHTML);

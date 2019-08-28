@@ -194,27 +194,38 @@
         </div>
     </div>
 </div>
-<!--<script src="js/jquery-3.4.1.min.js"></script>
+<!--<script src="js/jquery-3.4.1.min.js"></script>-->
 <!--<script src="js/bootstrap.min.js"></script>-->
-<!--<script src="/js/getCountries.js"></script>-->
+<script src="/js/getCountries.js"></script>
 <script src="js/registerValidate.js"></script>
-<script src="js/getState.js"></script>
+<script src="/js/getState.js"></script>
 <!--<script src="js/getState.js"></script>
 <script src="js/registerValidate.js">
 <script src="js/servicecss.js"></script></script>-->
 
 <script>
-var country = document.querySelector('[name=country]');
-var state = document.querySelector('[name=state]');
-var labelprov = document.querySelector('[name=provincia]');
-console.log("El pais es: " + country.value);
-console.log("El estado es: " + state.value);
-//state.style.display = 'none';
-//labelprov.style.display = 'none';
+window.addEventListener('load', function() {
+	var country = document.querySelector('[name=country]');
+	var state = document.querySelector('[name=state]');
+	var labelprov = document.querySelector('[name=provincia]');
+	console.log("El pais es: " + country.value);
+	console.log("El estado es: " + state.value);
+	state.style.display = 'none';
+	labelprov.style.display = 'none';
 
- country.addEventListener('change', function () {	
-		console.log("Evento blur detectado");
+	country.addEventListener('change', function () {	
+		console.log("Evento change detectado");
+		country = document.querySelector('[name=country]');
+		console.log("PAIS " + country.value);
+		if (country.value == 'AR'){
+			state.style.display = 'block';
+			labelprov.style.display = 'block';
+		} else {
+			state.style.display = 'none';
+			labelprov.style.display = 'none';
+		}
 	});
+})
 </script>
 @endsection
 
