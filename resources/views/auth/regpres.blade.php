@@ -16,7 +16,9 @@
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
+								<div class="invalid">
+									<!-- Mensaje de error -->
+								</div>
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -30,7 +32,9 @@
 
                             <div class="col-md-6">
                                 <input id="surname" type="text" class="form-control @error('surname') is-invalid @enderror" name="surname" value="{{ old('surname') }}" required autocomplete="surname" autofocus>
-
+								<div class="invalid">
+									<!-- Mensaje de error -->
+								</div>
                                 @error('surname')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -44,7 +48,9 @@
 
                             <div class="col-md-6">
                                 <input id="dni" type="text" class="form-control @error('dni') is-invalid @enderror" name="dni" value="{{ old('dni') }}" required autocomplete="dni" autofocus>
-
+								<div class="invalid">
+									<!-- Mensaje de error -->
+								</div>
                                 @error('dni')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -55,10 +61,11 @@
 						
 						<div class="form-group row">
                             <label for="genero" class="col-md-4 col-form-label text-md-right">{{ __('Género') }}</label>
-
                             <div class="col-md-6">
-                                <input id="genero" type="text" class="form-control @error('genero') is-invalid @enderror" name="genero" value="{{ old('genero') }}" required autocomplete="genero" autofocus>
-
+							<select name="genero" class="form-control"><option>Femenino</option><option>Masculino</option><option>Travesti</option><option>Otro</option></select>
+                                <div class="is-invalid">
+									<!-- Error -->
+								</div>
                                 @error('genero')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -72,7 +79,9 @@
 
                             <div class="col-md-6">
                                 <input id="userkind" type="text" class="form-control @error('userkind') is-invalid @enderror" name="userkind" value="prestador" required autocomplete="userkind" autofocus>
-
+								<div class="invalid">
+									<!-- Mensaje de error -->
+								</div>
                                 @error('userkind')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -85,8 +94,17 @@
                             <label for="profesion" class="col-md-4 col-form-label text-md-right">{{ __('Profesión') }}</label>
 
                             <div class="col-md-6">
-                                <input id="profesion" type="text" class="form-control @error('profesion') is-invalid @enderror" name="profesion" value="{{ old('profesion') }}" required autocomplete="profesion" autofocus>
-
+                               <select name="profesion" class="form-control">
+								<option>arquitecto</option>
+								<option>plomero</option>
+								<option>carpintero</option>
+								<option>mmo</option>
+								<option>gasista</option>
+								<option>Otro</option>
+							   </select>
+                                <div class="is-invalid">
+									<!-- Error -->
+								</div>
                                 @error('profesion')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -96,17 +114,27 @@
                         </div>
 						
 						<div class="form-group row">
-                            <label for="country" class="col-md-4 col-form-label text-md-right">{{ __('Barrio') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="country" type="text" class="form-control @error('barrio') is-invalid @enderror" name="country" value="{{ old('barrio') }}" required autocomplete="barrio" autofocus>
-
-                                @error('barrio')
+						<label for="country" class="col-md-4 col-form-label text-md-right">{{ __('País') }}</label>
+						<div class="col-md-6">
+								<select name="country" class="form-control"><option>Elegí país</option></select>
+                                @error('country')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
+							    @enderror
                             </div>
+                        </div>
+
+                        <div class="form-group row">
+                        <label for="state" name="provincia" class="col-md-4 col-form-label text-md-right">{{ __('Provincia') }}</label>
+                        <div class="col-md-6">
+                            <select name="state" class="form-control"><option>Elegí una provincia</option></select>
+                                            @error('state')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                         </div>
                         </div>
 						
 						<div class="form-group row">
@@ -114,7 +142,9 @@
 
                             <div class="col-md-6">
                                 <input id="birthdate" type="text" class="form-control @error('birthdate') is-invalid @enderror" name="birthdate" value="{{ old('birthdate') }}" required autocomplete="birthdate" autofocus>
-
+								<div class="invalid">
+									<!-- Mensaje de error -->
+								</div>
                                 @error('birthdate')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -128,7 +158,9 @@
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
+								<div class="invalid">
+									<!-- Mensaje de error -->
+								</div>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -142,7 +174,9 @@
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
+								<div class="invalid">
+									<!-- Mensaje de error -->
+								</div>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -179,4 +213,33 @@
         </div>
     </div>
 </div>
+
+<script src="/js/getCountries.js"></script>
+<script src="js/registerValidate.js"></script>
+<script src="/js/getState.js"></script>
+
+<script>
+window.addEventListener('load', function() {
+	var country = document.querySelector('[name=country]');
+	var state = document.querySelector('[name=state]');
+	var labelprov = document.querySelector('[name=provincia]');
+	console.log("El pais es: " + country.value);
+	console.log("El estado es: " + state.value);
+	state.style.display = 'none';
+	labelprov.style.display = 'none';
+
+	country.addEventListener('change', function () {	
+		console.log("Evento change detectado");
+		country = document.querySelector('[name=country]');
+		console.log("PAIS " + country.value);
+		if (country.value == 'Argentina'){
+			state.style.display = 'block';
+			labelprov.style.display = 'block';
+		} else {
+			state.style.display = 'none';
+			labelprov.style.display = 'none';
+		}
+	});
+})
+</script>
 @endsection

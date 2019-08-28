@@ -124,7 +124,7 @@
 						<div class="form-group row">
                             <label for="birthdate" class="col-md-4 col-form-label text-md-right">{{ __('Fecha de Nacimiento') }}</label>
                             <div class="col-md-6">
-                                <input id="birthdate" type="text" class="form-control" name="birthdate" value="{{ old('birthdate') }}" required autocomplete="birthdate" autofocus>
+                                <input id="birthdate" type="text" class="form-control" name="birthdate" value="{{ old('birthdate') }}" placeholder="AAAA-MM-DD" required autocomplete="birthdate" autofocus>
 								<div class="is-invalid">
 									<!-- Error -->
 								</div>
@@ -194,14 +194,10 @@
         </div>
     </div>
 </div>
-<!--<script src="js/jquery-3.4.1.min.js"></script>-->
-<!--<script src="js/bootstrap.min.js"></script>-->
+
 <script src="/js/getCountries.js"></script>
 <script src="js/registerValidate.js"></script>
 <script src="/js/getState.js"></script>
-<!--<script src="js/getState.js"></script>
-<script src="js/registerValidate.js">
-<script src="js/servicecss.js"></script></script>-->
 
 <script>
 window.addEventListener('load', function() {
@@ -217,7 +213,7 @@ window.addEventListener('load', function() {
 		console.log("Evento change detectado");
 		country = document.querySelector('[name=country]');
 		console.log("PAIS " + country.value);
-		if (country.value == 'AR'){
+		if (country.value == 'Argentina'){
 			state.style.display = 'block';
 			labelprov.style.display = 'block';
 		} else {

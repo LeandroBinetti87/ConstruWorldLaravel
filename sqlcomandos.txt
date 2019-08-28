@@ -1,0 +1,3 @@
+DELETE FROM usuarios WHERE id=25;
+INSERT INTO usuarios (name, surname, dni, email) VALUES ('Pepe','Lepew','11144775', 'pepe@lepew.com');
+ALTER TABLE usuarios AUTO_INCREMENT = 20;

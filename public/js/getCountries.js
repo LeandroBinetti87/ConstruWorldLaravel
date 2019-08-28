@@ -8,7 +8,8 @@
 		.then(function (data) {	
 			var selectPaises = document.querySelector('[name=country]');
 			for (var pais of data) {
-				selectPaises.innerHTML = selectPaises.innerHTML + '<option value=' + pais.alpha2Code + '>' + pais.name + '</option>';
+				selectPaises.innerHTML = selectPaises.innerHTML + '<option value=' + pais.name + '>' + pais.name + '</option>';
+				//selectPaises.innerHTML = selectPaises.innerHTML + '<option value=' + pais.alpha2Code + '>' + pais.name + '</option>';
 			}
 			//console.log(selectPaises.innerHTML);
 		})
