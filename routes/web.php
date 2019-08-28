@@ -102,3 +102,23 @@ Route::get("/contratar", "usuariosController@contratar_profesionales");
 Route::get("/setearcontratar/{id}", "usuariosController@setearcontratar");
 
 //Fin rutas ConstruWorld
+
+//ABM Proyectos:
+
+Route::get('/cwdb', function () {
+    return view('cwdb');
+});
+
+Route::get('/cwdbuser', function () {
+    return view('cwdbuser');
+});
+
+Route::get('/proymod', function () {
+    return view('proymod');
+});
+
+Route::get("/escribecw", "cwController@escribebase");
+
+Route::get("/modificacw", "cwController@modificabase");
+
+Route::get("/borracw", "cwController@borrarbase");

@@ -37,6 +37,10 @@
 				<p><?php //echo "SESION: " . $_SESSION['profesion'] . "<br>";?></p>
 				<p><?php //echo "SESION: " . $_SESSION['barrio'] . "<br>";?></p>
 				<p><?php //echo $path . "<br>";?></p>-->
+				
+				<?php if(isset($_SESSION['name']) && $datos_usuario["userkind"] == 'usuario'){
+					echo "<br><a href='/cwdbuser'>Calificar prestadores</a>";
+				}?>
 			</h3>
 		</div>
     </div>
