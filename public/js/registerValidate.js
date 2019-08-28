@@ -1,4 +1,6 @@
-// Capturo el formulario
+window.addEventListener('load', function() {
+	
+	// Capturo el formulario
 var elFormu = document.querySelector('form');
 
 // Capturo los campos del formulario y convirtiendo a un array
@@ -19,7 +21,7 @@ var regexEmail = /\S+@\S+\.\S+/;
 // Objeto que acumula los errores
 var errores = {};
 
-	losCampos[1].addEventListener('change', function () {	
+	/*losCampos[1].addEventListener('change', function () {	
 		console.log("Evento blur detectado");
 	});
 	
@@ -30,14 +32,14 @@ var errores = {};
 	
 	losCampos[3].addEventListener('click', function () {	
 		console.log("Evento blur detectado");
-	});
+	});*/
 
-/*losCampos.forEach(function (unCampo) {
+losCampos.forEach(function (unCampo) {
 	// div del error
 	var divError = null;
 	
 	divError = unCampo.nextElementSibling; //En nuestro caso, es siempre el siguiente elemento
-	
+
 	//console.log("ForEach " + unCampo.name + " " + unCampo.type);
 	
 	unCampo.addEventListener('blur', function () {	
@@ -99,4 +101,6 @@ elFormu.addEventListener('submit', function (event) {
 		console.log(errores);
 		event.preventDefault();
 	}
-})*/
+})
+	
+})

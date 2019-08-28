@@ -307,6 +307,11 @@ input{
 	text-align:center; /*No está esta línea en versión Lourdes*/
 }
 
+.card-body2{
+	width: calc(100% / 3);
+	padding: 20px;
+}
+
 .card-text{
 	font-size: 20px;
 	font-style:serif normal;

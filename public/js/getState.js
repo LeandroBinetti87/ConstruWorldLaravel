@@ -6,8 +6,10 @@
 			return response.json();
 		})
 		.then(function (data) {
+
 			var selectState = document.querySelector('[name=state]');
-			for (var state of data) {
+			for (var state of data.data) {
+				console.log(state.state)
 				//selectState.innerHTML += '<option>' + state.state + '</option>';
 				//console.log("Prov: " + state.state);
 			}

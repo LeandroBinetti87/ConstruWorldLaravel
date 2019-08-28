@@ -108,7 +108,7 @@
                         </div>
 
                         <div class="form-group row">
-                        <label for="state" class="col-md-4 col-form-label text-md-right">{{ __('Provincia') }}</label>
+                        <label for="state" name="provincia" class="col-md-4 col-form-label text-md-right">{{ __('Provincia') }}</label>
                         <div class="col-md-6">
                             <select name="state" class="form-control"><option>Elegí una provincia</option></select>
                                             @error('state')
@@ -195,12 +195,26 @@
     </div>
 </div>
 <!--<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>-->
-<script src="/js/getCountries.js"></script>
-<script src="/js/registerValidate.js"></script>
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--<script src="/js/getCountries.js"></script>-->
+<script src="js/registerValidate.js"></script>
 <script src="js/getState.js"></script>
 <!--<script src="js/getState.js"></script>
 <script src="js/registerValidate.js">
 <script src="js/servicecss.js"></script></script>-->
+
+<script>
+var country = document.querySelector('[name=country]');
+var state = document.querySelector('[name=state]');
+var labelprov = document.querySelector('[name=provincia]');
+console.log("El pais es: " + country.value);
+console.log("El estado es: " + state.value);
+//state.style.display = 'none';
+//labelprov.style.display = 'none';
+
+ country.addEventListener('change', function () {	
+		console.log("Evento blur detectado");
+	});
+</script>
 @endsection
 
