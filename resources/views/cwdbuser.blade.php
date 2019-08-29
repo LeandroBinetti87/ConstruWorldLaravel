@@ -12,6 +12,7 @@
 <div class='main-profile'>
 	<?php if(!isset($_SESSION['name'])){session_start();} ?>
 	<?php echo $_SESSION['id']; ?><?php echo " " . $_SESSION['name'] . " " . $_SESSION['surname']; ?>
+	<?php echo $proyectos; ?>
 	<form class="" action="/escribecw" method="get">
       <div class="form-group">
         <input class="form-control" type="hidden" name="id_usuario" value="<?php echo $_SESSION['id']; ?>" placeholder="id usuario">

@@ -45,4 +45,22 @@ class cwController extends Controller
 		$resultadoABM = "Proyecto borrado " . $proyecto;
 		return view('proymod', compact('resultadoABM'));
 	}
+	
+	public function cwdbuser(){
+		if(!isset($_SESSION['name'])){session_start();}
+		//$proyectos = "TEST PROYECTOS " . $_SESSION['name'];
+		$base = cwModel::all(); //traigo toda la tabla 'proyectos'
+		$proyectos = [];
+		$cnt = 0;
+		//$proyectos = $base[0]['nombre_usuario'];
+		foreach ($base as $clave=>$valor)
+		{
+			if($base[$clave]['id_usuario'] == $_SESSION['id'] ){ //Si coincide nombre_usuario de registro db con usuario logueado
+				//array_push($proyectos, $base[$clave]);
+				$proyectos = "AQUI DEBERIA IR INFO DE REGISTRO DE CALIFICACION";
+			} else {$proyectos = "AQUI DEBERIA IR INFO DE REGISTRO DE CALIFICACION";}
+		}
+		
+		return view('cwdbuser', compact('proyectos'));
+	}
 }

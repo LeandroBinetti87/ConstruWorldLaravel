@@ -64,6 +64,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 		if($_FILES["archivo"]["error"] === UPLOAD_ERR_OK){
+				$mensaje_error = "";
 				//echo "UPLOAD_ERR_OK";
 				$nombre_ar = $_FILES["archivo"]["name"];
 				$archivo = $_FILES["archivo"]["tmp_name"];
@@ -75,7 +76,7 @@ class RegisterController extends Controller
 				//$miArchivo = $miArchivo. "\\". "usuarios" . "\\" . "JosePaso.bmp"; //El nombre de la foto es el nombre del usuario. Hay que crear el directorio.
 				$miArchivo = "usuarios/" . $data['name'] . $data['surname']. "." . $ext;
 				//echo "miArchivo es: " . $miArchivo . "<br>";
-				if($ext=="jpg" || $ext=="bmp"){
+				if($ext=="jpg" || $ext=="bmp" || $ext=="png"){
 					move_uploaded_file($archivo, $miArchivo);
 				} else {
 					$mensaje_error = $mensaje_error . "Formato de imagen incorrecto<br>";

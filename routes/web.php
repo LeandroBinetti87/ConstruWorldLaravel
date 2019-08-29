@@ -109,9 +109,11 @@ Route::get('/cwdb', function () {
     return view('cwdb');
 });
 
-Route::get('/cwdbuser', function () {
+/*Route::get('/cwdbuser', function () {
     return view('cwdbuser');
-});
+});*/
+
+Route::get("/cwdbuser", "cwController@cwdbuser");
 
 Route::get('/proymod', function () {
     return view('proymod');
